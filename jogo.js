@@ -1,9 +1,3 @@
-function acertou() {
-    alert("Acertou, boa.");
-    localStorage.setItem("som", (parseInt(localStorage.getItem("som")) + 1));
-    window.location.reload();
-}
-
 function init() {
     if (!localStorage.getItem("som")) {
         localStorage.setItem("som", 0);
@@ -20,7 +14,9 @@ function init() {
         if (targets[i].classList[1] == "correta") {
             targets[i].addEventListener("targetFound", (e) => {
                 if (localStorage.getItem("som") == i) {
-                    acertou();
+                    alert("Acertou, boa.");
+                    localStorage.setItem("som", (parseInt(localStorage.getItem("som")) + 1));
+                    window.location.reload();
                 } else {
                     alert("Errouuuuuuuuuuuuu!");
                 }
