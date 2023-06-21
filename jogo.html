@@ -6,7 +6,7 @@
     <script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.2/dist/mindar-image-aframe.prod.js"></script>
-    <link rel="stylesheet" href="jogo.css">
+    <link rel="stylesheet" href="assets/css/jogo.css">
 </head>
 
 <body>
@@ -14,33 +14,33 @@
         <source src="" type="audio/mp3">
     </audio>
 
-    <a-scene mindar-image="imageTargetSrc: ./targets.mind;" color-space="sRGB"
+    <a-scene mindar-image="imageTargetSrc: ./assets/targets.mind;" color-space="sRGB"
         renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false"
         device-orientation-permission-ui="enabled: false">
         <a-camera position="0 0 0" look-controls="enabled: false"></a-camera>
 
-        <a-entity class="meusTargets correta" mindar-image-target="targetIndex: 0"></a-entity>
+        <a-entity class="meusTargets correta0" mindar-image-target="targetIndex: 0"></a-entity>
         <a-entity class="meusTargets" mindar-image-target="targetIndex: 1"></a-entity>
-        <a-entity class="meusTargets correta" mindar-image-target="targetIndex: 2"></a-entity>
+        <a-entity class="meusTargets correta1" mindar-image-target="targetIndex: 2"></a-entity>
         <a-entity class="meusTargets" mindar-image-target="targetIndex: 3"></a-entity>
-        <a-entity class="meusTargets correta" mindar-image-target="targetIndex: 4"></a-entity>
+        <a-entity class="meusTargets correta2" mindar-image-target="targetIndex: 4"></a-entity>
         <a-entity class="meusTargets" mindar-image-target="targetIndex: 5"></a-entity>
-        <a-entity class="meusTargets correta" mindar-image-target="targetIndex: 6"></a-entity>
-        <a-entity class="meusTargets correta" mindar-image-target="targetIndex: 7"></a-entity>
-        <a-entity class="meusTargets correta" mindar-image-target="targetIndex: 8"></a-entity>
+        <a-entity class="meusTargets correta3" mindar-image-target="targetIndex: 6"></a-entity>
+        <a-entity class="meusTargets correta4" mindar-image-target="targetIndex: 7"></a-entity>
+        <a-entity class="meusTargets correta5" mindar-image-target="targetIndex: 8"></a-entity>
         <a-entity class="meusTargets" mindar-image-target="targetIndex: 9"></a-entity>
         <a-entity class="meusTargets" mindar-image-target="targetIndex: 10"></a-entity>
-        <a-entity class="meusTargets correta" mindar-image-target="targetIndex: 11"></a-entity>
+        <a-entity class="meusTargets correta6" mindar-image-target="targetIndex: 11"></a-entity>
         <a-entity class="meusTargets" mindar-image-target="targetIndex: 12"></a-entity>
         <a-entity class="meusTargets" mindar-image-target="targetIndex: 13"></a-entity>
         <a-entity class="meusTargets" mindar-image-target="targetIndex: 14"></a-entity>
-        <a-entity class="meusTargets correta" mindar-image-target="targetIndex: 15"></a-entity>
-        <a-entity class="meusTargets correta" mindar-image-target="targetIndex: 16"></a-entity>
-        <a-entity class="meusTargets" mindar-image-target="targetIndex: 17"></a-entity>
+        <a-entity class="meusTargets correta7" mindar-image-target="targetIndex: 15"></a-entity>
+        <a-entity class="meusTargets" mindar-image-target="targetIndex: 16"></a-entity>
+        <a-entity class="meusTargets correta8" mindar-image-target="targetIndex: 17"></a-entity>
         <a-entity class="meusTargets" mindar-image-target="targetIndex: 18"></a-entity>
-        <a-entity class="meusTargets correta" mindar-image-target="targetIndex: 19"></a-entity>
+        <a-entity class="meusTargets correta9" mindar-image-target="targetIndex: 19"></a-entity>
     </a-scene>
-    <script src="jogo.js"></script>
+    <script src="assets/js/jogo.js"></script>
 </body>
 
 </html>

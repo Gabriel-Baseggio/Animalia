@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 3rem;
+    background: #D6FFCE url(../img/imgFundo.png) no-repeat center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 3rem;
+    width: 50%;
+    color: #822bb4;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button {
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    background-color: #822bb4;
+    color: #D6FFCE;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #500881;
+}
