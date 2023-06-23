@@ -30,9 +30,17 @@ button {
     color: #D6FFCE;
     border: none;
     border-radius: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 button:hover {
     cursor: pointer;
     background-color: #500881;
+}
+
+div {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
