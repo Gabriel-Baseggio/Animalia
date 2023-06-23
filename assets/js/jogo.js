@@ -1,5 +1,4 @@
 function acertou(n) {
-    console.log(n);
     if (localStorage.getItem("som") == n) {
         alert("Acertou, boa.");
         localStorage.setItem("som", (parseInt(localStorage.getItem("som")) + 1));
@@ -27,9 +26,7 @@ function init() {
                 alert("Errouuuuuuuuuuuuu!");
             });
         } else {
-            console.log(targets[i]);
             let num = parseInt(targets[i].classList[1].charAt(targets[i].classList[1].length - 1))
-            console.log(num);
             switch (num) {
                 case 0:
                     targets[i].addEventListener('targetFound', () => {
