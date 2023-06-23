@@ -4,11 +4,21 @@ function acertou(n) {
         localStorage.setItem("som", (parseInt(localStorage.getItem("som")) + 1));
         window.location.reload();
     } else {
-        alert("Errouuuuuuuuuuuuu!");
+        localStorage.setItem("vida", parseInt(localStorage.getItem("vida")) - 1);
+        if (parseInt(localStorage.getItem("vida")) <= 0) {
+            alert("Você perdeu todas as vidas! Voltando ao início!");
+            localStorage.clear();
+            window.location.href = "./index.html";
+        } else {
+            alert("Errouuuuuuuuuuuuu! Perdeu uma vida!\n Vidas: " + localStorage.getItem("vida"));
+        }
     }
 }
 
 function init() {
+    if (!localStorage.getItem("vida")) {
+        localStorage.setItem("vida", 3);
+    }
     if (!localStorage.getItem("som")) {
         localStorage.setItem("som", 0);
     }
@@ -23,7 +33,14 @@ function init() {
     for (let i = 0; i < targets.length; i++) {
         if (!targets[i].classList[1]) {
             targets[i].addEventListener("targetFound", (e) => {
-                alert("Errouuuuuuuuuuuuu!");
+                localStorage.setItem("vida", parseInt(localStorage.getItem("vida")) - 1);
+                if (parseInt(localStorage.getItem("vida")) <= 0) {
+                    alert("Você perdeu todas as vidas! Voltando ao início!");
+                    localStorage.clear();
+                    window.location.href = "./index.html";
+                } else {
+                    alert("Errouuuuuuuuuuuuu! Perdeu uma vida!\n Vidas: " + localStorage.getItem("vida"));
+                }
             });
         } else {
             let num = parseInt(targets[i].classList[1].charAt(targets[i].classList[1].length - 1))
