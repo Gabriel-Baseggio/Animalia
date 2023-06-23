@@ -10,7 +10,7 @@ function acertou(n) {
             localStorage.clear();
             window.location.href = "./index.html";
         } else {
-            alert("Errouuuuuuuuuuuuu! Perdeu uma vida!\n Vidas: " + localStorage.getItem("vida"));
+            alert("Errouuuuuuuuuuuuu! Perdeu uma vida!\n Vidas restantes: " + localStorage.getItem("vida"));
         }
     }
 }
@@ -39,7 +39,7 @@ function init() {
                     localStorage.clear();
                     window.location.href = "./index.html";
                 } else {
-                    alert("Errouuuuuuuuuuuuu! Perdeu uma vida!\n Vidas: " + localStorage.getItem("vida"));
+                    alert("Errouuuuuuuuuuuuu! Perdeu uma vida!\n Vidas restantes: " + localStorage.getItem("vida"));
                 }
             });
         } else {
