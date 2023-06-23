@@ -31,7 +31,7 @@ p {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-button {
+button, a {
     font-size: 1.5rem;
     padding: 10px 30px;
     background-color: #822bb4;
@@ -40,7 +40,7 @@ button {
     border-radius: 10px;
 }
 
-button:hover {
+button:hover, a {
     cursor: pointer;
     background-color: #500881;
 }
